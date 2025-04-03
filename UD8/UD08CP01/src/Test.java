@@ -12,6 +12,12 @@ public class Test {
         String palabra = sc.nextLine();
         PrintWriter pw = null;
         try{
+            //Este bucle lo que hace es:
+            //1. declare el pintwriter y lo asocio a un archivo
+            //2. establece el while mientra la palabra sea distinto de "fin"
+            //3. escribe la palabra en el archivo
+            //4. vuelve a preguntar al usuario por una nueva palabra
+            //5.  Lee la palabra y comienza el bucle de nuevo hasta que la palabra sea fin.
             pw = new PrintWriter("misArchivos/log.txt");
             while (!palabra.equalsIgnoreCase("fin")){
                 pw.println(palabra);
@@ -25,7 +31,8 @@ public class Test {
             if (pw!=null)
                 pw.close();
         }
-
+        
+        
         FileReader fr = null;
         BufferedReader br = null;
         try{
