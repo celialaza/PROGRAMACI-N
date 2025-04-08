@@ -64,6 +64,7 @@ public class GestorContactos {
                 String[] datos = linea.split(",");
                 if (!datos[0].equalsIgnoreCase(nombre)) {
                     pw.println(linea);
+                }else{
                     encontrado = true;
                 }
                 linea = br.readLine();
