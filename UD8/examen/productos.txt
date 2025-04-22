@@ -1,0 +1,5 @@
+zumo,2,alimento
+platano,1,alimento
+mouse,18,tecnología
+teclado,20,tecnología
+tomates,2,alimento
